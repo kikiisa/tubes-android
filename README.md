@@ -1,3 +1,6 @@
+### Judul : CRUD TODOLIST SQLITE 3 
+### Nama  : Mohamad Rizky Isa
+
 ### Splash 
 <p align="center">
   <img src="empat.jpg" width="90" title="hover text">
