@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kampusku">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_custom"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_custom"
+        android:supportsRtl="true"
+        android:theme="@style/Tema2">
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".updatedata"
+            android:exported="false"
+            android:label="Edit Tugas"
+            android:parentActivityName=".updatedata"
+            android:theme="@style/Tema1" />
+        <activity
+            android:name=".detaildata"
+            android:exported="false"
+            android:label="Rincian Tugas"
+            android:parentActivityName=".detaildata"
+            android:theme="@style/Tema1" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Dashboard" />
+        <activity
+            android:name=".datamahasiswa"
+            android:label="Daftar Tugas"
+            android:parentActivityName=".datamahasiswa"
+            android:theme="@style/Tema1" />
+        <activity
+            android:name=".informasi"
+            android:label="Tentang Aplikasi"
+            android:parentActivityName=".informasi"
+            android:theme="@style/Tema1" />
+        <activity
+            android:name=".inputdata"
+            android:label="Tambah Tugas"
+            android:parentActivityName=".inputdata"
+            android:theme="@style/Tema1" />
+    </application>
+
+</manifest>

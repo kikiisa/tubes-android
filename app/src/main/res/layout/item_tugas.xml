@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:id="@+id/item_list"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="10dp"
+    android:minHeight="64dp">
+
+    <ImageView
+        android:id="@+id/iconList"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:padding="16dp"
+        android:background="@drawable/layout_bg2"
+        android:src="@drawable/ic_baseline_menu_book_24"
+        app:tint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="test judul"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:layout_toEndOf="@id/iconList"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kategori"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:layout_below="@id/text1"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/iconList"
+        android:paddingEnd="16dp"
+        android:paddingLeft="10dp"
+        android:maxLines="2"
+        android:textColor="@color/primary" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_toEndOf="@id/text1"
+        android:paddingVertical="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/detail"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:tint="@color/primary" />
+
+</RelativeLayout>
